@@ -1,0 +1,34 @@
+﻿@page "/deletecontact/{Id:int}"
+@using ContactManager.Shared.Models
+@using ContactManager.Client.Services
+@inject ContactService ContactService
+@inject NavigationManager NavigationManager
+
+<h3>Delete Contact</h3>
+
+@if (contact == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <p>Are you sure you want to delete the contact <strong>@contact.FirstName @contact.LastName</strong>?</p>
+    <button class="btn btn-danger" @onclick="DeleteContactAsync">Delete</button>
+    <a href="/contacts" class="btn btn-secondary">Cancel</a>
+}
+
+@code {
+    [Parameter] public int Id { get; set; }
+    private Contact contact;
+
+    protected override async Task OnInitializedAsync()
+    {
+        contact = await ContactService.GetContact(Id);
+    }
+
+    private async Task DeleteContactAsync()
+    {
+        await ContactService.DeleteContact(Id);
+        NavigationManager.NavigateTo("/contacts");
+    }
+}
