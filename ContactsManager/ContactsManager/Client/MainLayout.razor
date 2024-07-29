@@ -1,13 +1,25 @@
 ﻿@inherits LayoutComponentBase
+@using Microsoft.AspNetCore.Components.Authorization
+@inject NavigationManager Navigation
 
-<div class="sidebar">
-    <NavMenu />
-</div>
+<AuthorizeView>
+    <Authorized>
+        <a href="Identity/Account/Logout">Logout</a>
+    </Authorized>
+    <NotAuthorized>
+        <a href="Identity/Account/Login">Login</a>
+        <a href="Identity/Account/Register">Register</a>
+    </NotAuthorized>
+</AuthorizeView>
 
-<div class="main">
-    <div class="top-row px-4 auth">
-        <a href="https://docs.microsoft.com/aspnet/core/client-side/blazor/?view=aspnetcore-6.0">About</a>
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
     </div>
 
-    @Body
+    <main>
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
 </div>

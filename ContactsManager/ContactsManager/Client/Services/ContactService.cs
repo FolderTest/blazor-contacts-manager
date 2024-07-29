@@ -1,7 +1,7 @@
 ﻿using System.Net.Http.Json;
-using ContactManager.Shared.Models;
+using ContactsManager.Shared.Models;
 
-namespace ContactManager.Client.Services
+namespace ContactsManager.Client.Services
 {
     public class ContactService
     {

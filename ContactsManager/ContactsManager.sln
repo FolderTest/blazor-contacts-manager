@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactsManager.Server", "ContactsManager\Server\ContactsManager.Server.csproj", "{FDEE8A13-17AD-4DA0-9F7D-0EE81B9BD5DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactsManager.Server", "ContactsManager\Server\ContactsManager.Server.csproj", "{FDEE8A13-17AD-4DA0-9F7D-0EE81B9BD5DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactsManager.Client", "ContactsManager\Client\ContactsManager.Client.csproj", "{9C027B0A-7B7E-450F-BA81-6C44A90D74BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactsManager.Client", "ContactsManager\Client\ContactsManager.Client.csproj", "{9C027B0A-7B7E-450F-BA81-6C44A90D74BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactsManager.Shared", "ContactsManager\Shared\ContactsManager.Shared.csproj", "{5BE2CE23-14C1-4CEF-86E0-700F41CE8E28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactsManager.Shared", "ContactsManager\Shared\ContactsManager.Shared.csproj", "{5BE2CE23-14C1-4CEF-86E0-700F41CE8E28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
