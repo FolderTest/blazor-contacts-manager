@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using ContactManager.Server.Data;
+using ContactsManager.Server.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

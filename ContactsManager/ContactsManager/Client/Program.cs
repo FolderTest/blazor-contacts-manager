@@ -1,4 +1,4 @@
-using ContactManager.Client.Services;
+using ContactsManager.Client.Services;
 using ContactsManager.Client;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;

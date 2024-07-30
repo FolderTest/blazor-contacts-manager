@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ContactManager.Server.Data;
-using ContactManager.Shared.Models;
+using ContactsManager.Server.Data;
+using ContactsManager.Shared.Models;
 
-namespace ContactManager.Server.Controllers
+namespace ContactsManager.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

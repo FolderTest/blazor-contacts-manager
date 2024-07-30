@@ -1,4 +1,4 @@
-﻿namespace ContactManager.Shared.Models
+﻿namespace ContactsManager.Shared.Models
 {
     public class Contact
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ContactManager.Shared.Models;
+using ContactsManager.Shared.Models;
 
-namespace ContactManager.Server.Data
+namespace ContactsManager.Server.Data
 {
     public class ApplicationDbContext : DbContext
     {
